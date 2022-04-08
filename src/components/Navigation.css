@@ -1,0 +1,37 @@
+.nav-wrapper {
+  display: flex;
+}
+
+.navigation {
+  margin-left: 16px;
+}
+
+.navigation .nav-item {
+  margin-right: 17px;
+}
+
+.nav-wrapper a {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  text-decoration: none;;
+  color: #A1A9B5;
+}
+
+.nav-wrapper a:hover {
+  color: white
+}
+.nav-wrapper a:focus {
+  color: white
+}
+
+.nav-mob_icon {
+  color: white;
+  display: none;
+  @media(max-width: 798px) {
+    display: block
+  }
+}
+

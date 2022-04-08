@@ -1,0 +1,17 @@
+.vector-wrapper {
+  cursor: pointer;
+}
+
+.vector-wrapper .logo_inactive {
+  display: block;
+}
+.vector-wrapper:hover .logo_inactive{
+  display: none;
+}
+
+.vector-wrapper .logo_active {
+  display: none;
+}
+.vector-wrapper:hover .logo_active{
+ display: block;
+}

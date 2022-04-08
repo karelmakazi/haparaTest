@@ -1,0 +1,27 @@
+.header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 52px;
+  width: 100vw;
+  padding:  0 0 0 24px;
+  background: #242D38;
+}
+
+.header-bar_nav {
+  display: flex;
+}
+
+.header-bar_nav__mob {
+  display: none;
+}
+
+@media all and (max-width: 768px) {
+  .header-bar_nav {
+    display: none;
+  }
+  
+  .header-bar_nav__mob {
+    display: flex;
+  }
+}
