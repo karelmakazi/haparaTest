@@ -2,16 +2,35 @@
   cursor: pointer;
 }
 
-.vector-wrapper .logo_inactive {
+.vector-logo .logo_inactive {
   display: block;
 }
-.vector-wrapper:hover .logo_inactive{
+.vector-logo:hover .logo_inactive{
   display: none;
 }
 
-.vector-wrapper .logo_active {
+.vector-logo .logo_active {
   display: none;
 }
-.vector-wrapper:hover .logo_active{
+.vector-logo:hover .logo_active{
  display: block;
+}
+
+.dd-menu-trigger .arrow path{
+  fill: #A1A9B5;
+  ;
+}
+.dd-menu-trigger:hover .arrow path{
+  fill: white;
+}
+.vector-arrow {
+  margin-top: -3px;
+}
+.arrow_closed {
+  transform: rotate(0);
+  transition: transform 0.2s linear;
+}
+.arrow_open {
+  transform: rotate(-180deg);
+  transition: transform 0.2s linear;
 }

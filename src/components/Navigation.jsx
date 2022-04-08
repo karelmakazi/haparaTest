@@ -13,7 +13,7 @@ const Navigation = ()=> {
   return (
     <div className="nav-wrapper">
       <div className="nav-icon">
-        <VectorDisplay />
+        <VectorDisplay vector={'logo'}/>
       </div>
       <div className="navigation">
           {activeNav.map((item)=> {
