@@ -1,28 +1,29 @@
-import React, { useState, useRef } from "react"
+import React, { useRef } from "react"
+import './DropMenu.css' 
+import { useOutsideClick } from "../useOutsideClick/useOutsideClick"
 import menuContent from "../menuContent/menuContent"
 
 const DropMenu = ()=> {
   const dropDownRef = useRef(null)
-  const [isActive, setIsActive] = useState(false)
-
+  const [isActive, setIsActive] = useOutsideClick(dropDownRef, false)
+  const onClick = ()=> setIsActive(!isActive) 
+  
   const viewMode = 'teacher'
   const menuHeader = (viewMode === 'teacher') ? 'student@school.org' : 'teacher@school.org'
 
-  const onClick = ()=> setIsActive(!isActive)
-
 
   return (
-    <div className="menu-wrapper">
-      <button className="menu-trigger" onClick={onClick}>
-        {`${menuHeader}.school.com`}
+    <div className="dd-menu-container">
+      <button className="dd-menu-trigger" onClick={onClick}>
+        <span>{menuHeader}</span>
       </button>
 
-      <nav ref={dropDownRef} className={`menu ${isActive ? 'active' : 'inactive'}`}>
+      <nav ref={dropDownRef} className={`dd-menu ${isActive ? 'active' : 'inactive'}`}>
         <ul>
           {menuContent.map((item)=> {
               return (
                 <li  key={item.id}> 
-                 <a className="menu-item" href={item.url}> {item.title}</a>
+                 <a className="dd-menu-item" href={item.url}> {item.title}</a>
                 </li>
               )
             })
