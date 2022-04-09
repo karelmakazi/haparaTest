@@ -20,12 +20,15 @@
   fill: #A1A9B5;
   ;
 }
+
 .dd-menu-trigger:hover .arrow path{
   fill: white;
 }
+
 .vector-arrow {
   margin-top: -3px;
 }
+
 .arrow_closed {
   transform: rotate(0);
   transition: transform 0.2s linear;
@@ -33,4 +36,7 @@
 .arrow_open {
   transform: rotate(-180deg);
   transition: transform 0.2s linear;
+}
+.dd-menu-trigger .arrow.arrow_open path{
+ fill: white;
 }

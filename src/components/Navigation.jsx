@@ -1,6 +1,6 @@
 import React from "react"
-import navStructure from "../navContent/navContent"
 import './Navigation.css'
+import navStructure from '../content/navContent.js'
 import VectorDisplay from "./VectorDisplay"
 
 const Navigation = ()=> {

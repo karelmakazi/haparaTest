@@ -1,17 +1,17 @@
-import React, { useEffect, useRef } from "react"
+import React, { useRef } from "react"
 import './DropMenu.css' 
-import menuContent from "../menuContent/menuContent"
+import menuContent from "../content/menuContent"
 import { useOutsideClick } from "../useOutsideClick/useOutsideClick"
 import VectorDisplay from "./VectorDisplay"
 
 const DropMenu = ()=> {
   const dropDownRef = useRef(null)
   const [isActive, setIsActive] = useOutsideClick(dropDownRef, false)
-  const onClick = ()=> setIsActive(!isActive)
   
+  const onClick = ()=> setIsActive(!isActive)
+
   const viewMode = 'teacher'
   const menuHeader = (viewMode === 'teacher') ? 'student@school.org' : 'teacher@school.org'
-
 
   return (
     <div className="dd-menu-container">
@@ -23,10 +23,10 @@ const DropMenu = ()=> {
       <nav ref={dropDownRef} className={`dd-menu ${isActive ? 'active' : 'inactive'}`}>
 
         <ul>
-          <li>{menuHeader}</li>
+          <li className={"dd-menu-header"}><a>{menuHeader}</a></li>
           {menuContent.map((item)=> {
               return (
-                <li  key={item.id}> 
+                <li className={"dd-menu-li"} key={item.id}> 
                  <a className="dd-menu-item" href={item.url}> {item.title}</a>
                 </li>
               )
