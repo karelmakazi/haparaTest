@@ -1,14 +1,14 @@
 const menuContent = [
-  { 
+  {
     id: 1,
-    title: 'Settings',
-    url: 'www.google.com'
+    title: "Settings",
+    url: "#",
   },
   {
     id: 2,
-    title: 'Sign Out',
-    url: 'www.google.com'
-  }
+    title: "Sign Out",
+    url: "#",
+  },
 ]
 
 export default menuContent

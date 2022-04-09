@@ -1,0 +1,92 @@
+#menu-toggle {
+  opacity: 0;
+}
+#menu-toggle:checked + .menu-btn > span {
+  transform: rotate(45deg);
+}
+#menu-toggle:checked + .menu-btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu-toggle:checked + .menu-btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu-toggle:checked ~ .menu-box {
+  left: -6px !important;
+  opacity: 1;
+}
+.menu-btn {
+  position: fixed;
+  top: 25px;
+  left: 18px;
+  width: 21px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+  outline: none;
+}
+
+.menu-btn:focus {
+  outline: none;
+}
+
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #a1a9b5;
+  transition-duration: 0.25s;
+}
+
+.menu-btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu-btn > span::after {
+  content: "";
+  top: 8px;
+}
+.menu-box {
+  opacity: 0;
+  display: block;
+  position: absolute;
+  top: 55px;
+  left: -100%;
+  width: 40%;
+  height: max-content;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #fff;
+  /* transition-duration: .25s; */
+  border-radius: 3px;
+  border: 1px solid #a1a9b5;
+  transition: opacity 0.4s ease, left 0.4s ease;
+}
+
+.menu-box ul {
+  padding: 0;
+}
+.menu-item {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #242d38;
+  display: block;
+  padding: 10px 26px;
+  text-decoration: none;
+  transition-duration: 0.25s;
+  margin: 3px 0;
+}
+
+.menu-item:hover {
+  background-color: #eeeeee;
+}

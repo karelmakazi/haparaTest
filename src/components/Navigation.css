@@ -11,27 +11,26 @@
 }
 
 .nav-wrapper a {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 20px;
-  text-decoration: none;;
-  color: #A1A9B5;
+  text-decoration: none;
+  color: #a1a9b5;
 }
 
 .nav-wrapper a:hover {
-  color: white
+  color: white;
 }
 .nav-wrapper a:focus {
-  color: white
+  color: white;
 }
 
 .nav-mob_icon {
   color: white;
   display: none;
-  @media(max-width: 798px) {
-    display: block
+  @media (max-width: 798px) {
+    display: block;
   }
 }
-
