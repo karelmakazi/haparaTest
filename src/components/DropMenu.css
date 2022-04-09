@@ -88,6 +88,22 @@
   align-items: center;
 }
 
+.dd-menu li .button {
+  padding: 0 0 0 16px;
+  display: flex;
+  width: 100%;
+  height: 34px;
+  text-decoration: none;
+  color: #333333;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dd-menu li .button:hover {
+  background: #EEEEEE;
+  transition: background 0.25s linear;
+}
+
 .dd-menu-li {
 height: 37px;
 }
