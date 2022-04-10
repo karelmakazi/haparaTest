@@ -2,7 +2,7 @@
 
 This mini project is my submission for the Hapara Developer Role and makes use of React Context Hooks to achieve the required functionality. As Bonus Points Tasks the header is also responsive (mobile mode triggers at 798px) and features a fly in hamburger menu when viewed in mobile mode. Another feature I would like to highlight is the use of a custom hook: useOutsideClick which was written to close the user switching dropdown on an off element click. This functionality was not implemented on the mobile hamburger navigation to prevent accidental touches triggering premature closing of the navigation menu. 
 
-This submission also features an end-to-end test using Cypress.
+This submission also features end-to-end testing of user states using Cypress.
 
 ## Initial Steps 
 
